@@ -100,7 +100,7 @@
 }
 #sliderbox
 {
-    border: 2px solid red;
+    border: 0px solid red;
     position: relative;
     width: 1875px;  
     animation-name: slide;
