@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Awesome To-Do List HTML,CSS & JavaScript</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<div>
+	<div class="container">
+		<div class="addTask">
+			<input type="text" placeholder="Add a Task">
+			<button>Add</button>
+		</div>
+
+		<ol class="notCompleted">
+			<h3>Not Completed</h3>
+		</ol>
+
+		<ol class="Completed">
+			<h3>Completed</h3>
+		</ol>
+	</div>
+
+	<!----------- Social Media------------>
+
+	<div class="social-media">
+		<a href="https://www.facebook.com/subhadipguchhait.guchhait.3?mibextid=ZbWKwL" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPdJREFUSEvt1j1KQ0EUxfHfQ+ws04gLEMHGHRhwA7Y2pjFZhH12oJggmM4dpAvqElIouIFgbARTiiBPLIagvA99bxTftPdy/3POXA6TiHSSSFx/FryCHaxhgUc84CXLye8o3scJ1pcgt9iuCtzBxRfDKwOvYoZW3eBdXC1B7zHG88c7n1Zh9SFGweA5NvCaBQvrZZari0Ew5AapC4VOGXAPZwHlGu1CVEoFSK3gO2zlVHWJg6zevFYXAfdxHAN8hPMY4D1MfgoczkkVDWNsdQOuLUAaqxurs7LjvZ43q39FgKS/ys3gJk+Y5pIZNJVRXJTxaf//A78BOAw2H9IcdF0AAAAASUVORK5CYII="/>
+		</a>
+		<a href="https://instagram.com/itz_subhadip106?igshid=OGY3MTU3OGY1Mw==" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAvVJREFUSEvl1ksIVVUUBuDPntADDJKy7EFYoaCp1aSwxJqVJBIURPmAGjizwkBKrAiFipwIDco0IXBQSZaTgkiDoqdIUkgNIiuCIElrlsUv68bhdM59NDFow+XC2Xuvf61//XutNcVJWlNOEq7/PPB0zMSpIxj6A1/jx1FMDov4QjyN23DeKEOt/V/wFtb2OdEHHLCdOLsM/obPkYiGrTOwAGfWoWO4C3val7qAz8I3SMQv4Xl8OgbowPZpWIjH6/8HXInfm+BdwLmwviK+e0KKc/xeToj2ZbyLReXEhlHAh3FxRfzThMABDWDWykrPfnyPGcOAQ28U+RVm9YDGqTtwA/7EB3i97t2H7XVvVaXqKM7BNPw8sNmmOsJIPt+v/LSxH8AzOLe18SvWYCtWFNVf4OPSyxWYg3w7sdrAEcXeegq3t4w/VKAB2YzPcDrmFmiiCnj2mutAgYahsNMJfCveLuqWNW7PL+9D1bWVs6bxS8uRMBHWDjY2k+NrisEwORT4VdzZuPwEHsODeK4n949gEx7FU40zYSaO34R9fcC34J2OiHcj1OeXitS1wlAcbjsdzYSFPKv3+oCzmbf3JpY0rO8qJUfNb0wIHIFdh8Vlu5PqAXCMB2SwUlBSWB7Gsz3A64ri/G9snPmkdHFzCXcocDviS+ptp+zN6xDXZVUsUi6vbjWGscR1Y73h5LH9nFZjC1L482QSSZpCFJtnlBp/P15oMRKFz8b1dacz4qgvKuwrIDEcqrsKSBT/Ykca0nBSQOJg3nQncOrpd/gWl/fkMiVzKcJO2uSHeK2n755SXSltMulKH+gEzoRxpGrrReNMEj3ODT5HzVF10jO12Vq72mLoSoF/BfeMMDxqO+U3ZTh9PTb/Xl3A5+NQjTuZHJ7ERzg+CqX2B4NA7iUdGYOuanamnOsbfZZjWwPo344+MZFWuaPt9LBhL7U1Sk0Fi0gmWWEntSAvIHT/Y40zV18wZCjoc+ZLDJ1exgGeJNKxz/7/gP8C/LagH31MPSUAAAAASUVORK5CYII="/>
+		</a>
+		<a href="https://www.linkedin.com/in/subhadip-guchhait-675395252" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXVJREFUSEvt1r9LlVEcx/GX0BCBQ0JL4KDS4miQDSoqODm6BYLQUBSBQ2IgYjSI6KCDmH+A4FaLi5QYtQVFW0M/JnPUoAZdJI48wsMX7xXiXO6l7nd7Puc83/f5fM/3nOdpUadoqRNXw4EncA07+FiLqpzn+B36SrBxbOSGR/A9rAfIZ3TXGjyHpwHyG621BvfjbYBs4k6twSn/fTzBdbzEXSTXWaPhjtPfumvDDfzAXrUk0XEHvocX1vCw0B5jKYxfxQBSY/aUxn5hG+mkHMRF5ABPYqWKu6+4hcPynBzgI1y+YG9mMJ8bnPKd4Bv2i7JHQ+navZkbnBynK/ZDkXgQr3CpBEoLu4LjMy1HqVfxKJR6C6NBS92e9vs0coDH8CJAlpGarhy9eJ8TPILXATKLZ0EbwptK4M6iScrvPMeDQpjCYkg4jN2gTWOhCW6WutwD/19zpcv+djgG6dv6pdDa0RXGP+Fn0C6c98/8gQTjlR/r5vgPzo1yH1gxDtsAAAAASUVORK5CYII="/>
+		</a>
+		<a href="https://github.com/Subhadip956425" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAslJREFUSEvl1svLVlUUBvDfZyDoIBI1TdFMSjBDxWtKf0AklOnAgXhF05GKoANBQRSCFEMEscRSbCBBGgiCYwddVLwnCF4qK/CCBImmlrE+9pHt7pzve99v4sAFL7znnPWsZ++113rW7vCMrOMZ8WqXuBemYCReoRP/B67he/zT6kZaJX4V6zAb/RuC38E3+BhXultAd8S9sR5rEf9bsUf4BBvxoAnQFXGk8jAmtsJW43McM/F7Hb6JeAS+w+AeklawIJ2On8s4dcT98APeSM6XUxFFQbViQfI3RiXni5iGP3NwHfFeLMic3sVRTMAWjEEEi1+cZzyPRixwNSLF7+BYFmM3PuqKeGpqi9zntdQurey28okjijar7DHewk/Vi3LHX2FuwTAeZ9phxZu4UGD2YEkd8Qu4hZcywI200pttEr+YjmJIhotCG1pHPCmdT86xAjvaJK3c40w/K7CRiaiNpyQzeu5Q4RiVfLWHxLHb3wrs+0kbniKO/Ef15RbgvEjaWUNf3C0ATzKYF9dSfF44jsPZdtgy32H4pcCuwdYy1bOSyOe+i/FlD4k/wLcFdiH2lcQhAk/6LAGOYEYPiQ/iwwI7GSdK4niOdirH3nzsb5M8MJ07y+yv1KqdM7sUkF1YhodJNKLFwr7AhpoqLdcTwyXGYRCXFlK8qHpZEueKsxKnUotFFv7FSWzDgSJq6PnmpOdNE28szjURx/tPsSo5xFQZhK+zi0CdhA5EqFyTbc9idvrUra5PGhSxwqq4IvA83MfOhughFrlEVm6n00y+l+Oa0jIcP6bdLk/9HROmKwuFizPOLfT5bfxaAru6+kSQ2HG0WVTkJYQovNzAHmIR3ys7j/fqSJtSnccN2YsqjQEfV9vbGNBAHNIaczg6Ii4Mm9LR1Lp3d8usQLGTSPnrmNNAHH17PdVAORz+B2mVuJvjbf/z80f8H67Sfh+X1Cq0AAAAAElFTkSuQmCC"/>
+		</a>
+	</div>
+</div>
+
+	<script>
+		const input = document.querySelector('input');
+		const btn = document.querySelector('.addTask > button');
+
+		btn.addEventListener('click', addList);
+		input.addEventListener('keyup', (e)=>{
+			(e.keyCode === 13 ? addList(e) : null);
+		})
+
+		function addList(e){
+			const notCompleted = document.querySelector('.notCompleted');
+			const Completed = document.querySelector('.Completed');
+
+			const newLi = document.createElement('li');
+			const checkBtn = document.createElement('button');
+			const delBtn = document.createElement('button');
+			const crossBtn = document.createElement('button');
+
+			checkBtn.innerHTML = '<i class="fa fa-check"></i>';
+			delBtn.innerHTML = '<i class="fa fa-trash"></i>';
+			crossBtn.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>'
+
+
+			if(input.value !==''){
+				newLi.textContent = input.value;
+				input.value = '';
+				notCompleted.appendChild(newLi);
+				newLi.appendChild(checkBtn);
+				newLi.appendChild(delBtn);
+				newLi.appendChild(crossBtn);
+				crossBtn.style.display = 'none';
+			}
+
+
+			checkBtn.addEventListener('click', function(){
+				const parent = this.parentNode;
+				parent.remove();
+				Completed.appendChild(parent);
+				delBtn.style.display = 'block';
+				crossBtn.style.display = 'block';
+				checkBtn.style.display = 'none';
+			});
+
+			delBtn.addEventListener('click', function(){
+				const parent = this.parentNode;
+				parent.remove();
+			});
+
+			crossBtn.addEventListener('click', function(){
+				const parent = this.parentNode;
+				parent.remove();
+				notCompleted.appendChild(parent);
+				checkBtn.style.display = 'block';
+				delBtn.style.display = 'block';
+				crossBtn.style.display = 'none';
+			});
+		}
+
+	</script>
+</body>
+</html>
