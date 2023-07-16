@@ -1,0 +1,52 @@
+#loader
+{
+    border: 2px solid blue;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    margin-right: 0;
+    width: 3000px;
+    height: 200px;
+}
+
+#loader img
+{
+    border: 2px solid red;
+    width: 1600px;
+    height: 800px;
+    position: absolute;
+    align-items: center;
+}
+
+#menu-content
+{
+    display: none;
+}
+
+@media (max-width: 767px)
+{
+    #loader
+{
+    border: 2px solid blue;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    margin-right: 0;
+    width: 400px;
+    height: 1000px;
+}
+
+#loader img
+{
+    border: 0px solid red;
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    align-items: center;
+}
+
+#menu-content
+{
+    display: none;
+}
+}
